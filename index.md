@@ -9,11 +9,13 @@ permalink: /
 # Alexia's Docs
 {: .fs-9 }
 
-Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.
+Welcome to my Documentation Platform. This is an attempt at sharing very technical and specific documentation with the whole wide world. 
+If you are interested about contributing, it's using markdown (Jeckyll) fork the repo and send a merge
+request with the articles you'd wish to share. And thanks!
 {: .fs-6 .fw-300 }
 
-[Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[View it on GitHub](https://github.com/alexiarstein){: .btn .fs-5 .mb-4 .mb-md-0 }
+#[Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[View it on GitHub](https://github.com/alexiarstein){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
