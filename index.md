@@ -8,17 +8,18 @@ permalink: /
 
 # Alexia's Docs
 {: .fs-9 }
+Welcome to my Documentation Portal. This is an ongoing effort to share very specific technical notes with the whole wide world and my
+way to give something back to the community that taught me most of the things I know. 
 
-Welcome to my Documentation Platform. This is an attempt at sharing very technical and specific documentation with the whole wide world. 
-If you are interested about contributing, it's using markdown (Jeckyll) fork the repo and send a merge
-request with the articles you'd wish to share. And thanks!
+If you would like to contribute, please fork the repo, send your articles as a merge request and they will be published. And Thanks!
+
 {: .fs-6 .fw-300 }
 
-#[Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[View it on GitHub](https://github.com/alexiarstein){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 }
+<!-- [Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } -->
+[View it on GitHub](https://github.com/alexiarstein/alexiarstein.github.io){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 }
 
 ---
-
+<!--
 {: .warning }
 > This website documents the features of the current `main` branch of the Just the Docs theme. See [the CHANGELOG]({% link CHANGELOG.md %}) for a list of releases, new features, and bug fixes.
 
@@ -99,3 +100,4 @@ Just the Docs is committed to fostering a welcoming community.
 [GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
 [customize]: {% link docs/customization.md %}
 [use the template]: https://github.com/just-the-docs/just-the-docs-template/generate
+-->
