@@ -13,6 +13,17 @@ way to give something back to the community that taught me most of the things I 
 
 If you would like to contribute, please fork the repo, send your articles as a merge request and they will be published. And Thanks!
 
+So why did I use Jekyll instead of MkDocs or Sphinx?
+
+Well, for one, they are all pretty similar in the sense that Sphinx and MkDocs are static documentation platforms in markdown and serve a similar purpose.
+I've used Jekyll mostly because I can deploy it in github pages saving me $$ in webhosting. 
+
+Also, because it uses a github repository as backend, so I can edit and push articles straight from a terminal editor, making my life a lot easier.
+If I am working from the terminal on a personal project, I can go documenting straight from another terminal window in my second monitor as I go on
+in order to keep track of everything I'm doing and thus, creating a comprehensive step-by-step document. 
+
+Or, if I can be absolutely honest with you all, I just am a terminal freak and it's what I am most comfortable working with. :D
+
 <!-- {: .fs-6 .fw-300 } -->
 
 <!-- [Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } 
