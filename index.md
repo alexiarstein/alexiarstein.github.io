@@ -13,7 +13,7 @@ way to give something back to the community that taught me most of the things I 
 
 If you would like to contribute, please fork the repo, send your articles as a merge request and they will be published. And Thanks!
 
-{: .fs-6 .fw-300 }
+<!-- {: .fs-6 .fw-300 } -->
 
 <!-- [Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } 
 [View it on GitHub](https://github.com/alexiarstein/alexiarstein.github.io){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 } -->
