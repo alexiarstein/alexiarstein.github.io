@@ -1,9 +1,9 @@
 ---
-title: CHANGELOG
+title: Extras
 layout: default
 ---
 
-# CHANGELOG
+# Extras
 
 This is a personal space for sharing technical documentation with the whole-wide-world. This is a one-woman-project and I might not be following good or common practises here.
 Since I will probably be the only person maintaining this, changes might not be on a fixed schedule.  I do this in my spare time, whenever is it possible.
@@ -20,6 +20,8 @@ This is a work in progress. I am tidying things around still (March 3rd, 2024)
 
 {: .note }
 This is just a note. So I don't forget how to style it.
+
+## Changelog
 
 I will be providing changelog updates as I modify the template.
 
