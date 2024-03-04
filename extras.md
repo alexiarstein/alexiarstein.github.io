@@ -3,7 +3,7 @@ title: Extras
 layout: default
 ---
 
-# Extras
+# EXTRAS
 
 This is a personal space for sharing technical documentation with the whole-wide-world. This is a one-woman-project and I might not be following good or common practises here.
 Since I will probably be the only person maintaining this, changes might not be on a fixed schedule.  I do this in my spare time, whenever is it possible.
@@ -12,6 +12,7 @@ Docs might be in English or Spanish depending on my needs. Ideally I will have t
 
 If anyone wants to expand and translate to other languages, feel free to fork the project and send a merge-request. 
 
+And lastly, opinions are my own. 
 
 {: .highlight }
 This is a work in progress. I am tidying things around still (March 3rd, 2024)
