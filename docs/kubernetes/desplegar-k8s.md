@@ -85,7 +85,7 @@ Ahora validaremos que el pod del operador --que luego instalará los componentes
 Debido al hecho que k3s viene con una clase de almacenamiento por defecto (default storage class) para crear volúmenes dentro de la maquina donde corre, el siguiente paso
 nos permite definir un _**Persistent Volume Claim**_ (Como en OpenShift) y un _**Custom Resource Definition**_. 
 
-Si deseamos explorar la lsita completa de los crds que instaló AWX podemos hacerlo con el siguiente comando:
+Si deseamos explorar la lista completa de los crds que instaló AWX podemos hacerlo con el siguiente comando:
 
 ```
 kubectl get crds awxs.awx.ansible.com -o yaml
@@ -192,7 +192,7 @@ sudo k3s kubectl config view --raw
 
 Esta vez, a diferencia de la vez anterior, instalaremos el nodo utilizando la IP del master y su token, con el siguiente comando:
 ```
-curl -sfL https://get.k3s.io | K3S_URL=https://ip-of-your-master-server:6443 K3S_TOKEN="paste the token obtained in the master node here" sh -
+curl -sfL https://get.k3s.io | K3S_URL=https://ip-del-master-server:6443 K3S_TOKEN="pegar el token que obtuvimos del master aqui" sh -
 ```
 Luego configuramos el agente (worker) en systemd para que el start por defecto sea en modo worker y no master
 
@@ -204,7 +204,9 @@ Ahora volvemos al nodo master y verificamos que el nodo worker haya entrado al c
 ```
 sudo kubectl get nodes
 ```
-El output debería ser similar a este:
+El output debería ser similar a este, donde refleja el nodo master (control-plane, master, en mi caso andromeda)
+y el nodo worker, en mi caso vulcano. Pertenecen a diferentes LANs pero al estar dentro de la misma red 
+no hubo conflictos de firewall. En caso de existir, habilitar TCP/6443-6444 en iptables o ufw (debian) o SELinux (ecosistema RHEL)
 
 ```
 [alexia@andromeda ~] $ sudo kubectl get nodes
@@ -217,7 +219,7 @@ andromeda.lcds.intranet   Ready    control-plane,master   43h   v1.28.7+k3s1
 Alternativamente, el nodo worker puede ser inicializado manualmente a través del siguiente comando:
 
 ```
-sudo k3s agent ---server https://your-master-server-ip:6443 --token "your-token-here"
+sudo k3s agent ---server https://ip-del-master:6443 --token "token del master aqui"
 ```
 
 Y eso es todo para tener un cluster de kubernetes productivo en funcionamiento y el despliegue de AWX dentro. Espero que les resulte de utilidad este documento y sientanse libres de consultarme 

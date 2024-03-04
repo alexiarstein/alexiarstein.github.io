@@ -14,8 +14,6 @@ Docs might be in English or Spanish depending on my needs. Ideally I will have t
 
 If anyone wants to expand and translate to other languages, feel free to fork the project and send a merge-request. 
 
-And lastly, opinions are my own. 
-
 {: .highlight }
 This is a work in progress. I am tidying things around still (March 3rd, 2024)
 
