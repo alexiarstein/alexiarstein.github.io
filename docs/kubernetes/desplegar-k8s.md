@@ -175,11 +175,11 @@ Ahora podemos loguearnos a AWX a través de la interfaz web utilizando la IP del
 
 ![AWX Local Cluster]({{ '/assets/images/awx-cluster.png' | relative_url }})
 
-### Agregar un nodo worker al cluster para distribuir mejor la carga
+## Agregar un nodo worker al cluster para distribuir mejor la carga
 
 Los requisitos para esta tarea son similares que para desplegar un nodo master.
 
-## Conseguir el token del nodo master
+### Conseguir el token del nodo master
 
 ```
 sudo cat /var/lib/rancher/k3s/server/node-token
@@ -188,7 +188,7 @@ También podemos obtener la IP del master corriendo el siguiente comando (en el 
 ```
 sudo k3s kubectl config view --raw
 ```
-## Instalando Kubernetes en el nodo Worker como Worker (jeje)
+### Instalando Kubernetes en el nodo Worker como Worker (jeje)
 
 Esta vez, a diferencia de la vez anterior, instalaremos el nodo utilizando la IP del master y su token, con el siguiente comando:
 ```
