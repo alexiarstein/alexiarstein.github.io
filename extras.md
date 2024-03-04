@@ -19,17 +19,12 @@ And lastly, opinions are my own.
 {: .highlight }
 This is a work in progress. I am tidying things around still (March 3rd, 2024)
 
-
-
-{: .note }
-This is just a note. So I don't forget how to style it.
-
 ## CHANGELOG
 
-2024-03-03: sass corrections for dark layout & persistent dark layout
+```2024-03-03: sass corrections for dark layout & persistent dark layout
 
 Today I have changed the colour for links to green so it reflects better on a dark background.
 Now the dark theme is the default theme for the docs platform and the only one which will be 
 developed from now on since it's the only one I use.
-
+```
 
