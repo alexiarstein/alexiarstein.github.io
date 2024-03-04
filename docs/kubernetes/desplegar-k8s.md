@@ -40,7 +40,7 @@ Generar un token
 sudo k3s kubectl config view --raw >> ~/config_k3s.yam
 ```
 
-{: .important }
+{: .important importante }
 Proteger este archivo de acuerdo a las políticas de seguridad vigentes. Si no se protege, Kubernetes te recordará que
 no estás siguiendo las buenas prácticas de admin que a esta altura ya deberías conocer y utilizar a diario. :-)
 
