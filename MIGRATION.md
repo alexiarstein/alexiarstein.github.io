@@ -1,6 +1,7 @@
 ---
 title: Migration and Upgrading
 layout: default
+hidden: true
 ---
 
 # Migrating and Upgrading

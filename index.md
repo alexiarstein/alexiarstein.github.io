@@ -15,8 +15,9 @@ If you would like to contribute, please fork the repo, send your articles as a m
 
 {: .fs-6 .fw-300 }
 
-<!-- [Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } -->
-[View it on GitHub](https://github.com/alexiarstein/alexiarstein.github.io){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 }
+<!-- [Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } 
+[View it on GitHub](https://github.com/alexiarstein/alexiarstein.github.io){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 } -->
+[View it on GitHub](https://github.com/alexiarstein/alexiarstein.github.io){: .btn .btn-primary .btn-green }
 
 ---
 <!--
