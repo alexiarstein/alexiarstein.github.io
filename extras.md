@@ -5,7 +5,9 @@ layout: default
 
 # EXTRAS
 
-This is a personal space for sharing technical documentation with the whole-wide-world. This is a one-woman-project and I might not be following good or common practises here.
+This is a personal space for sharing technical documentation with the whole wide world.
+
+This is a one-woman-project and I might not be following good or common practises here.
 Since I will probably be the only person maintaining this, changes might not be on a fixed schedule.  I do this in my spare time, whenever is it possible.
 
 Docs might be in English or Spanish depending on my needs. Ideally I will have them translated in both languages. 
