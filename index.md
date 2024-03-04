@@ -24,6 +24,8 @@ in order to keep track of everything I'm doing and thus, creating a comprehensiv
 
 Or, if I can be absolutely honest with you all, I just am a terminal freak and it's what I am most comfortable working with. :D
 
+BTW, did I ever mention how much I love documenting in Markdown?
+
 <!-- {: .fs-6 .fw-300 } -->
 
 <!-- [Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } 
