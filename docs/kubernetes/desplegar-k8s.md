@@ -204,8 +204,8 @@ Ahora volvemos al nodo master y verificamos que el nodo worker haya entrado al c
 ```
 sudo kubectl get nodes
 ```
-El output debería ser similar a este, donde refleja el nodo master (control-plane, master, en mi caso andromeda)
-y el nodo worker, en mi caso vulcano. Pertenecen a diferentes LANs pero al estar dentro de la misma red 
+El output debería ser similar a este, donde refleja el nodo master (control-plane, master, en mi caso andromeda
+y el nodo worker, en mi caso vulcano) Pertenecen a diferentes LANs pero al estar dentro de la misma red 
 no hubo conflictos de firewall. En caso de existir, habilitar TCP/6443-6444 en iptables o ufw (debian) o SELinux (ecosistema RHEL)
 
 ```
