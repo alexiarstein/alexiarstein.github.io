@@ -8,7 +8,7 @@ nav_order: 3
 
 ### Adding a worker node to your cluster to distribute the load
 
-The requirement for this is the same as above. Another rockylinux installation within the same network
+The requirement for this is the same as above. Another OS installation within the same network
 
 ## Get the token from the master node
 
