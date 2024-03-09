@@ -7,6 +7,9 @@ layout: default
 
 This script reports the real time weather on a given area, it can be integrated with other scripts and applications.
 
+### LATEST VERSION:
+[weatherterminal-1.0.2](https://github.com/alexiarstein/weatherterminal)
+
 
 ## Basic Usage
 
@@ -14,6 +17,11 @@ weather.sh city region (e.g: weather.sh buenos aires argentina)
 
 
 ## Configuring
+
+{: .highlight }
+Notice that this script requires CURL, JQ and BASH in order to work. Make sure you have them installed.
+Debian distros: ```sudo apt install jq``` RHEL-based distros: ```sudo dnf install jq```
+
 
 ### Getting an API Key
 
