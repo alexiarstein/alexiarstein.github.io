@@ -13,8 +13,11 @@ This script reports the real time weather on a given area, it can be integrated 
 
 ## Examples
 
+Running a query from the terminal:
+
 ![Running it from the terminal]({{ '/assets/images/weatherterm1.png' | relative_url }})
 
+Integrated  with a discord bot using the spanish translation (commented by default)
 
 ![Integrated with a Discord Bot]({{ '/assets/images/weatherterm2.png' | relative_url }})
 
