@@ -11,6 +11,14 @@ This script reports the real time weather on a given area, it can be integrated 
 [weatherterminal-1.0.2](https://github.com/alexiarstein/weatherterminal)
 
 
+## Examples
+
+![Running it from the terminal]({{ '/assets/images/weatherterm1.png' | relative_url }})
+
+
+![Integrated with a Discord Bot]({{ '/assets/images/weatherterm2.png' | relative_url }})
+
+
 ## Basic Usage
 
 weather.sh city region (e.g: weather.sh buenos aires argentina)
