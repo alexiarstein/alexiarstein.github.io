@@ -1,80 +1,64 @@
----
-title: Lexiserver
-layout: default
----
+# LEXISERVER
+A Simple Webserver written in C for Educational Purposes.
 
-# Lexiserver
+## INSTALL
+run (as sudo/root) install.sh (e.g: sudo bash install.sh) this will create /opt/lexiserver/ and move
+all the files there.
 
-This script reports the real time weather on a given area, it can be integrated with other scripts and applications.
+## UNINSTALL
+remove the /opt/lexiserver directory (e.g: sudo rm -rf /opt/lexiserver/)
 
-### LATEST VERSION:
-[weatherterminal-1.0.2](https://github.com/alexiarstein/weatherterminal)
+## STARTING AND SERVING DOCUMENTS:
 
+The important files are:
+- lexiserver (the server binary)
+- lexiserver.conf (the config file for the server)
 
-## Examples
+Before starting the server, edit the config to change the WEB_ROOT to a directory that you like.
+By default, it looks for html documents inside /tmp/www/. You may need to create this directory
+if you don't have it (you likely don't have it since most webservers use /var/www/html/)
 
-Running a query from the terminal:
+To start the server, run ./lexiserver
 
-![Running it from the terminal]({{ '/assets/images/weatherterm1.png' | relative_url }})
+If the client doesn't request any page, ej you hit localhost:port
+it will serve index.html in /tmp/www or whatever directory you decided to use for your experiment.
 
-Integrated  with a discord bot using the spanish translation (commented by default)
+Stopping the server:
 
-![Integrated with a Discord Bot]({{ '/assets/images/weatherterm2.png' | relative_url }})
+You can kill the PID (Process ID) to end serving documents
+```ps aux | grep lexiserver``` ```kill <pid number>```
 
+## WARNING
+This is a webserver for educational purposes. Do not expose this to the internet unless you know
+exactly what you're doing. 
 
-## Basic Usage
+## TO DO:
+- UTF-8 encoding
+- More Error Pages (only handles 404 at the moment)
+- start, stop, restart arguments
+## Compile your own version
 
-weather.sh city region (e.g: weather.sh buenos aires argentina)
+Inside the src directory you will find the current version of lexiserver.c
+compile with gcc: ```gcc lexiserver.c -o lexiserver```
+move the compiled version to /opt/lexiserver
 
+The binary has to be alongside lexiserver.conf in order to work properly. If the config
+is not present, it will assume defaults anyway.
 
-## Configuring
+## OTHER NOTES
+This is a recreational project. Just for fun. Not intended to be serious or to be ran in production.
+Bugs will be there, things will not make much sense. Feel free to fork the project, fix whatever
+you think you can fix, and send me a merge request.
 
-{: .highlight }
-Notice that this script requires CURL, JQ and BASH in order to work. Make sure you have them installed.
-Debian distros: ```sudo apt install jq``` RHEL-based distros: ```sudo dnf install jq```
+To fork the project:
 
+Fork https://github.com/alexiarstein/simple-webserver
 
-### Getting an API Key
+## Documentation and info
 
-register an account at [weatherapi.com](https://weatherapi.com) The free plan allows for one million hits a day. 
+[alexia.lat/docs/lexiserver](https://alexia.lat/docs/lexiserver)
 
-Obtain your assigned API key, edit weather.sh and change the value of the variable API_KEY="" for your newly assigned key
-```
-API_KEY="YOUR-API-KEY-GOES-HERE"
-```
+I hope you enjoy this little project and if you have any doubts you can write me on discord at
+https://lexi.lat > mis links > discord
 
-### Changing the language of the output
-
-By default, the output is in English. If you'd like the output to be in Spanish, edit the weather.sh script 
-and comment the two printf lines and uncomment the two printf lines that are commented by default.
-
-```
-## If you want the output in spanish, uncomment the two commented lines and comment the two in English. 
-## Otherwise leave it as it is.
-
-    printf "Weather Report for: %s, %s\n" "$City" "$Region"
-#    printf "Clima para: %s, %s\n" "$City" "$Region"
-#    printf "Temp Actual: %s°C | ST: %s°C | Nubosidad: %s%% | Humedad: %s%% | Viento: %s km/h, %s\n" \
-    printf "Temperature: %s°C | Feels Like: %s°C | Cloud Index: %s%% | Humidity: %s%% | Wind Spd.: %s km/h, %s\n" \
-```
-
-
-## Integration with Discord Bots (python)
-
-In this example, the discord bot, written in python, will trigger a response when someone in a discord channel excecutes the command !clima city region (e.g: !clima buenos aires argentina)
-
-```
-@bot.command(name='clima')
-async def get_clima(ctx, *args):
-    location = ' '.join(args)
-    try:
-        clima_output = subprocess.check_output(['/bin/bash', clima_path, *args], text=True)
-        await ctx.send(f'{clima_output}')
-    except subprocess.CalledProcessError as e:
-        print(e)
-        await ctx.send('Alexia se debe haber mandado alguna cagada pq esto no funca')
-```
-
-For this to work, you need to create a variable in your bot's script called clima_path including the path to your bash weather.sh script.
-if you are planning on making this portable, e.g: including the script in the same directory where your bot runs, make sure you have ```import os``` in your python script.
- 
+Goodbye!
