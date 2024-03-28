@@ -2,6 +2,9 @@
 A Simple Webserver written in C for Educational Purposes.
 
 ## INSTALL
+
+[Clone The Repo](https://github.com/alexiarstein/simple-webserver){: .btn .btn-primary .btn-green }
+
 run (as sudo/root) install.sh (e.g: sudo bash install.sh) this will create /opt/lexiserver/ and move
 all the files there.
 
