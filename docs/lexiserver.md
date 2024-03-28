@@ -13,6 +13,13 @@ remove the /opt/lexiserver directory (e.g: sudo rm -rf /opt/lexiserver/)
 
 ## STARTING AND SERVING DOCUMENTS:
 
+{: .highlight }
+Raspberry Pi users run lexiserver-amd64 instead
+
+{: .warning }
+make sure to have a /tmp/www/ directory for your docs or configure lexiserver.conf
+to a directory where you want to store the pages which will be served
+
 The important files are:
 - lexiserver (the server binary)
 - lexiserver.conf (the config file for the server)
@@ -57,9 +64,12 @@ To fork the project:
 
 Fork https://github.com/alexiarstein/simple-webserver
 
-## Documentation and info
 
-[alexia.lat/docs/lexiserver](https://alexia.lat/docs/lexiserver)
+
+{: .highlight }
+For issues with spanish tildes and the ñ be sure to include UTF-8 in your <HEAD> tags
+of your html pages.
+
 
 I hope you enjoy this little project and if you have any doubts you can write me on discord at
 https://lexi.lat > mis links > discord
